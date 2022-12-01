@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=League+Spartan:wght@300;400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 300;
+  background-color: hsl(222, 26%, 31%);
+  font-size: 1.2rem;
+}
+.container{
+  max-width: 500px;
+  margin: 40px auto;
+}
+.flex{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.bg-royal,
+.bg-orange,
+.text-white{
+  color:  hsl(0, 0%, 100%);
+}
+.bg-blue{
+  background-color: hsl(223, 31%, 20%);
+}
+.bg-white{
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: 2px 2px 5px 1px hsl(28, 16%, 65%);
+  color: hsl(221, 14%, 31%);
+}
+.bg-royal{
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 2px 2px 5px 1px  hsl(224, 28%, 35%);
+}
+.bg-orange{
+  background-color: hsl(6, 63%, 50%);
+}
+.keys input,
+.pointer{
+  cursor: pointer;
+}
+input{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: inherit;
+}
+.keys input,
+.keys div,
+.radius{
+  border-radius: 10px;
+}
+/* ============SPECIFIC ==================*/
+header h2{
+  font-weight: 700;
+}
+header .flex{
+  gap: 1rem;
+}
+header .flex .flex{
+  padding: .5rem 1rem;
+  font-family: 'Black Ops One', cursive;
+}
+.toggle{
+  padding: .3rem .6rem;
+  width: 100%;
+  height: 27px;
+}
+.toggle .bg-orange{
+  width: 20%;
+  border-radius: 50%;
+  height: 90%;
+}
+.result{
+  margin: 1.6rem 0;
+  background-color: hsl(224, 36%, 15%);
+  padding: 1rem;
+}
+h1 input{
+  text-align: end;
+  font-size: 2.6rem;
+  font-family: 'Black Ops One', cursive;
+}
+h1 input::placeholder{
+  font-size: 3rem;
+  color: inherit;
+  font-weight: 700;
+  font-family: 'Black Ops One', cursive;
+}
+.keys{
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+.keys input{
+  font-weight: 700;
+  font-size: 2rem;
+  padding: .6rem;
+}
+.reset{
+  grid-column: 1/3;
+}
+.keys .bg-orange{
+  grid-column: -3/-1;
+  box-shadow: 2px 2px 5px 1px   hsl(6, 70%, 34%);
+}
+input{
+  border: none;
+}
+.attribution {
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .container{
+    margin: 10px auto;
+  }
+  .result{
+    margin: 1.4rem 0;
+  }
+  .keys{
+    padding: .8rem;
+  }
+  .keys input{
+    font-size: 1.6rem;
+    padding: .4rem;
+  }
+  .attribution{
+    font-size: 1.2rem;
+  }
+}

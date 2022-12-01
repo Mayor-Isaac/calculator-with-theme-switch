@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="flex text-white">
+      <h2>calc</h2>
+      <div class="flex">
+        <h4>THEME</h3>
+        <div>
+        <div class="flex">
+          <h3>1</h3>
+          <h3>2</h3>
+          <h3>3</h3>
+        </div>
+        <div class="toggle pointer bg-blue radius">
+          <div class="bg-orange">&NonBreakingSpace;</div>
+        </div>
+        </div>
+      </div>
+    </header>
+    <section class="result radius">
+      <h1 class="text-white">
+        <input type="text" name="result" id="result" placeholder="0" readonly />
+      </h1>
+    </section>
+    <section class="keys bg-blue radius">
+      <div class="bg-white number">
+        <input type="button" value="7" onclick="liveScreen(7)" />
+      </div>
+      <div class="bg-white number">
+        <input type="button" value="8" onclick="liveScreen(8)" />
+      </div>
+      <div class="bg-white number">
+        <input type="button" value="9" onclick=" liveScreen(9)" />
+      </div>
+      <div class="bg-royal">
+        <input type="button" value="DEL" class="delete"/>
+      </div>
+      <div class="bg-white number">
+        <input type="button" value="4" onclick=" liveScreen(4)" />
+      </div>
+      <div class="bg-white number">
+        <input type="button" value="5" onclick=" liveScreen(5)" />
+      </div>
+      <div class="bg-white number">
+        <input type="button" value="6" onclick=" liveScreen(6)" />
+      </div>
+      <div class="bg-white">
+        <input type="button" value="+" onclick="liveScreen('+')" />
+      </div>
+      <div class="bg-white number">
+        <input type="button" value="1" onclick="liveScreen(1)" />
+      </div>
+      <div class="bg-white number">
+        <input type="button" value="2" onclick="liveScreen(2)" />
+      </div>
+      <div class="bg-white number">
+        <input type="button" value="3" onclick="liveScreen(3)" />
+      </div>
+      <div class="bg-white">
+        <input type="button" value="-" onclick="liveScreen('-')" />
+      </div>
+      <div class="bg-white">
+        <input type="button" value="." onclick="liveScreen('.')" />
+      </div>
+      <div class="bg-white number">
+        <input type="button" value="0" onclick="liveScreen(0)" />
+      </div>
+      <div class="bg-white">
+        <input type="button" value="/" onclick="liveScreen('/')" />
+      </div>
+      <div class="bg-white">
+        <input type="button" value="x" onclick="liveScreen('*')" />
+      </div>
+      <div class="bg-royal reset">
+        <input type="button" value="RESET" onclick="result.value=''" id="clear-button" />
+      </div>
+      <div class="bg-orange">
+        <input type="button" value="=" onclick="calculate(result.value)" />
+      </div>
+    </section>
+  </div>
+  <div class="attribution text-white">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+       class="text-white">Frontend Mentor</a
+    >. Coded by <a href="https://www.frontendmentor.io/profile/Mayor-Isaac" class="text-white">Mayor Idyllic</a>.
+  </div>
+  <script src="./JS/calc.js"></script>
+  <script src="./JS/theme.js"></script>
+</body>
+</html>
